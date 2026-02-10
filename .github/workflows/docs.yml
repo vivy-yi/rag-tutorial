@@ -1,0 +1,108 @@
+name: Deploy Jupyter Notebooks to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install jupyter
+          pip install nbconvert
+          pip install mkdocs-material
+          pip install mkdocs-jupyter
+
+      - name: Convert Notebooks to Markdown
+        run: |
+          # 创建文档目录
+          mkdir -p site/notebooks
+
+          # 转换所有notebooks
+          for notebook in $(find . -name "*.ipynb" -not -path "./.ipynb_checkpoints/*"); do
+            echo "Converting $notebook"
+            jupyter nbconvert --to markdown "$notebook" --output-dir site/notebooks/
+          done
+
+      - name: Create index page
+        run: |
+          cat > site/index.md << 'EOF'
+          # RAG完整教程 - Jupyter Notebooks
+
+          欢迎来到RAG完整教程的Jupyter Notebook在线预览！
+
+          ## 📚 Notebook列表
+
+          ### 模块1：基础入门
+
+          - [01 - RAG核心概念](notebooks/01_rag_concepts.md)
+          - [02 - 环境搭建](notebooks/02_environment_setup.md)
+          - [03 - 基础RAG实现](notebooks/03_basic_rag_implementation.md)
+          - [04 - RAG评估](notebooks/04_rag_evaluation.md)
+
+          ### 模块2：核心优化
+
+          - [06 - 嵌入模型深入](notebooks/06_embedding_models.md)
+          - [07 - 高级分块策略](notebooks/07_advanced_chunking.md)
+          - [08 - 查询增强技术](notebooks/08_query_enhancement.md)
+          - [09 - 混合检索](notebooks/09_hybrid_retrieval.md)
+          - [10 - 高级RAG模式](notebooks/10_advanced_rag_patterns.md)
+          - [11 - 性能优化](notebooks/11_performance_optimization.md)
+          - [12 - 综合优化](notebooks/12_comprehensive_optimization.md)
+          - [13 - 检索压缩](notebooks/13_retrieval_compression.md)
+
+          ### 模块3：高级架构
+
+          - [13 - ReAct Agent](notebooks/13_react_agent.md)
+          - [14 - 高级Agent模式](notebooks/14_advanced_agents.md)
+          - [14 - Deep Research](notebooks/14_deep_research_agent.md)
+          - [15 - GraphRAG](notebooks/15_graph_rag.md)
+          - [16 - 多模态RAG](notebooks/16_multimodal_rag.md)
+
+          ---
+
+          **💡 提示**: 这些是Jupyter Notebook转换后的Markdown版本。
+          想要交互式运行，请克隆仓库到本地：
+          ```bash
+          git clone https://github.com/yourusername/rag-tutorial.git
+          cd rag-tutorial
+          pip install -r requirements.txt
+          jupyter notebook
+          ```
+          EOF
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

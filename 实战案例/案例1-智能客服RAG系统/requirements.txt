@@ -1,0 +1,23 @@
+# 案例1：智能客服RAG系统 - 依赖包
+
+# 核心框架
+streamlit==1.29.0
+langchain==0.1.0
+langchain-community==0.0.10
+langchain-openai==0.0.2
+
+# 向量数据库
+chromadb==0.4.22
+
+# 嵌入模型
+sentence-transformers==2.2.2
+
+# LLM
+openai==1.7.2
+
+# 数据处理
+pandas==2.1.4
+numpy==1.26.3
+
+# 工具
+python-dotenv==1.0.0

@@ -1,0 +1,20 @@
+# 案例3：AI研究助手Agent - 依赖包
+
+# 核心框架
+streamlit==1.29.0
+langchain==0.1.0
+langchain-openai==0.0.2
+
+# Agent工具
+requests==2.31.0
+arxiv==2.1.0
+wikipedia==1.4.0
+
+# LLM
+openai==1.7.2
+
+# 数据处理
+pandas==2.1.4
+
+# 工具
+python-dotenv==1.0.0

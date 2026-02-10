@@ -1,0 +1,3 @@
+# 案例4依赖
+streamlit==1.29.0
+networkx==3.2.1
