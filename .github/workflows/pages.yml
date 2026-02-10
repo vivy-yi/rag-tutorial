@@ -88,6 +88,13 @@ jobs:
           ```
           EOF
 
+      - name: Copy to docs directory (compatibility)
+        run: |
+          # 同时复制到/docs目录，兼容GitHub Pages的source配置
+          mkdir -p docs
+          cp -r site/* docs/
+          echo "✓ 已复制到docs目录"
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
