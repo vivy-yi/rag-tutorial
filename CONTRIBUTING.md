@@ -10,7 +10,7 @@
 
 如果你发现了bug、错误或有疑问：
 
-1. 检查 [Issues](https://github.com/yourusername/rag-tutorial/issues) 确保问题还没有被报告
+1. 检查 [Issues](https://github.com/vivy-yi/rag-tutorial/issues) 确保问题还没有被报告
 2. 创建一个Issue，详细描述问题
 3. 包含复现步骤（如果可能）
 4. 提供截图或错误日志
@@ -102,7 +102,7 @@
 
 ```bash
 # 1. Fork并克隆仓库
-git clone https://github.com/yourusername/rag-tutorial.git
+git clone https://github.com/vivy-yi/rag-tutorial.git
 cd rag-tutorial
 
 # 2. 创建虚拟环境
@@ -136,7 +136,7 @@ pre-commit install
 
 如果你有任何问题或建议：
 
-- **GitHub Issues**: [提交Issue](https://github.com/yourusername/rag-tutorial/issues)
+- **GitHub Issues**: [提交Issue](https://github.com/vivy-yi/rag-tutorial/issues)
 - **Email**: your.email@example.com
 
 ---

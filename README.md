@@ -4,11 +4,11 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/rag-tutorial?style=social)](https://github.com/yourusername/rag-tutorial/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/vivy-yi/rag-tutorial?style=social)](https://github.com/vivy-yi/rag-tutorial/stargazers)
 
 **在线文档** | **Jupyter Notebooks** | **实战案例**
 ---|---|---
-[GitHub Pages](https://yourusername.github.io/rag-tutorial/) | [查看Notebooks](#-jupyter-notebooks) | [6个完整案例](#-实战案例)
+[GitHub Pages](https://vivy-yi.github.io/rag-tutorial/) | [查看Notebooks](#-jupyter-notebooks) | [6个完整案例](#-实战案例)
 
 ---
 
@@ -78,7 +78,7 @@
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/yourusername/rag-tutorial.git
+git clone https://github.com/vivy-yi/rag-tutorial.git
 cd rag-tutorial
 
 # 2. 安装依赖
@@ -241,7 +241,7 @@ jupyter lab
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/yourusername/rag-tutorial.git
+git clone https://github.com/vivy-yi/rag-tutorial.git
 cd rag-tutorial
 
 # 2. 创建虚拟环境
@@ -393,7 +393,7 @@ RAG完整教程/
 
 ## 📮 联系方式
 
-- **Issue**: [GitHub Issues](https://github.com/yourusername/rag-tutorial/issues)
+- **Issue**: [GitHub Issues](https://github.com/vivy-yi/rag-tutorial/issues)
 - **Email**: your.email@example.com
 
 ---
@@ -402,4 +402,4 @@ RAG完整教程/
 
 请给个Star支持一下！🙏
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/rag-tutorial?style=social)](https://github.com/yourusername/rag-tutorial/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/vivy-yi/rag-tutorial?style=social)](https://github.com/vivy-yi/rag-tutorial/stargazers)
