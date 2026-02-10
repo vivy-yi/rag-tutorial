@@ -105,3 +105,6 @@ tmp/
 # *.pdf
 # *.mp4
 # *.mov
+
+# Development files (internal use only)
+开发/
