@@ -1,0 +1,49 @@
+/* 自定义样式 */
+
+/* 优化代码块样式 */
+.md-typeset pre {
+  border-radius: 8px;
+  margin: 1.5em 0;
+}
+
+/* 优化表格样式 */
+.md-typeset table:not([class]) {
+  font-size: 0.9rem;
+  border-radius: 8px;
+}
+
+/* 优化图片样式 */
+.md-typeset img {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* 优化提示框样式 */
+.md-typeset .admonition {
+  border-radius: 8px;
+  border-left: 4px solid;
+}
+
+/* Jupyter Notebook输出样式 */
+.jp-CodeCell {
+  margin-bottom: 1em;
+}
+
+.jp-OutputArea-output {
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  padding: 0.5em;
+  margin: 0.5em 0;
+}
+
+/* 优化内联代码 */
+.md-typeset code {
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* 优化Tab标签 */
+.md-typeset .tabbed-labels {
+  border-bottom: 2px solid var(--md-default-fg-color--lightest);
+}

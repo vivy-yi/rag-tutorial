@@ -1,0 +1,185 @@
+site_name: RAG完整教程 - 从入门到生产部署
+site_description: 最全面的中文RAG技术教程，从基础概念到生产部署
+site_author: vivy-yi
+repo_url: https://github.com/vivy-yi/rag-tutorial
+repo_name: vivy-yi/rag-tutorial
+
+# Material主题配置
+theme:
+  name: material
+  language: zh
+  palette:
+    # 自动切换亮色/暗色模式
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到亮色模式
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+
+# 插件配置
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+      separator: '[\s\-\.]+'
+  - mkdocs-jupyter:
+      execute: false
+      execute_on: >-
+        (?x)^(
+          notebooks/module1/01_rag_concepts.ipynb|
+        )$
+
+# 导航结构
+nav:
+  - 首页: index.md
+
+  # 模块1：基础入门
+  - 基础入门:
+    - 模块1概述: docs/01-基础入门/00-教程导航.md
+    - RAG技术概述: docs/01-基础入门/01-RAG技术概述.md
+    - 环境搭建与工具准备: docs/01-基础入门/02-环境搭建与工具准备.md
+    - 基础RAG实现: docs/01-基础入门/03-基础RAG实现.md
+    - RAG评估基础: docs/01-基础入门/04-RAG评估基础.md
+    - 模块1总结与项目: docs/01-基础入门/05-模块1总结与项目.md
+
+  # Jupyter Notebooks - 模块1
+  - 模块1实战:
+    - RAG核心概念: notebooks/module1/01_rag_concepts.md
+    - 环境搭建: notebooks/module1/02_environment_setup.md
+    - 基础RAG实现: notebooks/module1/03_basic_rag_implementation.md
+    - RAG评估: notebooks/module1/04_rag_evaluation.md
+
+  # 模块2：核心优化
+  - 核心优化:
+    - 嵌入模型深入: docs/02-核心优化/06-嵌入模型深入.md
+    - 高级分块策略: docs/02-核心优化/07-高级分块策略.md
+    - 查询增强技术: docs/02-核心优化/08-查询增强技术.md
+    - 混合检索与重排序: docs/02-核心优化/09-混合检索与重排序.md
+    - 高级RAG模式: docs/02-核心优化/10-高级RAG模式.md
+    - 性能优化: docs/02-核心优化/11-性能优化.md
+    - 综合项目优化: docs/02-核心优化/12-综合项目优化.md
+    - 检索压缩优化: docs/02-核心优化/13-检索压缩优化.md
+
+  # Jupyter Notebooks - 模块2
+  - 模块2实战:
+    - 嵌入模型深入: notebooks/module2/06_embedding_models.md
+    - 高级分块策略: notebooks/module2/07_advanced_chunking.md
+    - 查询增强技术: notebooks/module2/08_query_enhancement.md
+    - 混合检索: notebooks/module2/09_hybrid_retrieval.md
+    - 高级RAG模式: notebooks/module2/10_advanced_rag_patterns.md
+    - 性能优化: notebooks/module2/11_performance_optimization.md
+    - 综合优化: notebooks/module2/12_comprehensive_optimization.md
+    - 检索压缩: notebooks/module2/13_retrieval_compression.md
+
+  # 模块3：高级架构
+  - 高级架构:
+    - Agentic RAG基础: docs/03-高级架构/13-Agentic-RAG基础.md
+    - 高级Agent模式: docs/03-高级架构/14-高级Agent模式.md
+    - 知识图谱RAG: docs/03-高级架构/15-知识图谱RAG.md
+    - 多模态RAG: docs/03-高级架构/16-多模态RAG.md
+
+  # Jupyter Notebooks - 模块3
+  - 模块3实战:
+    - ReAct Agent: notebooks/module3/13_react_agent.md
+    - 高级Agent模式: notebooks/module3/14_advanced_agents.md
+    - Deep Research: notebooks/module3/14_deep_research_agent.md
+    - GraphRAG: notebooks/module3/15_graph_rag.md
+    - 多模态RAG: notebooks/module3/16_multimodal_rag.md
+
+  # 模块4：生产部署
+  - 生产部署:
+    - 环境配置: docs/04-生产部署/17-环境配置.md
+    - Docker部署: docs/04-生产部署/18-Docker部署.md
+    - 监控和日志: docs/04-生产部署/19-监控和日志.md
+    - 安全实践: docs/04-生产部署/20-安全实践.md
+    - 最佳实践: docs/04-生产部署/22-最佳实践.md
+
+# Markdown扩展
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - tables
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# 额外CSS和JS
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# 额外配置
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/vivy-yi/rag-tutorial
+    - icon: fontawesome/solid/envelope
+      link: mailto:xiaoluopupu@gmail.com
+
+# 版权信息
+copyright: Copyright &copy; 2026 vivy-yi
