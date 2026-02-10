@@ -137,7 +137,7 @@ pre-commit install
 如果你有任何问题或建议：
 
 - **GitHub Issues**: [提交Issue](https://github.com/vivy-yi/rag-tutorial/issues)
-- **Email**: your.email@example.com
+- **Email**: xiaoluopupu@gmail.com
 
 ---
 
