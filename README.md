@@ -1,6 +1,6 @@
 # RAG完整教程 - 从入门到生产部署
 
-> 🚀 **完整的RAG技术教程** - 从基础概念到生产部署，系统化掌握检索增强生成技术
+> 🚀 **最全面的中文RAG技术教程** - 从基础概念到生产部署，系统化掌握检索增强生成（Retrieval-Augmented Generation）技术。涵盖LangChain、LlamaIndex、向量数据库、Agent、GraphRAG等前沿技术。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
@@ -12,13 +12,24 @@
 
 ---
 
+## 🔍 什么是RAG？
+
+**RAG（Retrieval-Augmented Generation，检索增强生成）** 是一种结合了检索和生成的AI技术，通过从外部知识库中检索相关信息来增强大语言模型（LLM）的生成能力，有效解决幻觉问题、知识过时和事实错误。
+
+**本教程将带您从零开始，逐步掌握RAG技术，最终能够独立构建企业级RAG应用。**
+
+---
+
 ## ✨ 特性
 
 - 📚 **系统化学习路径**: 4个模块，20章内容，从入门到精通
-- 💻 **17个Jupyter Notebooks**: 交互式学习环境
-- 🎯 **6个完整实战案例**: 企业级代码实现
+- 💻 **17个Jupyter Notebooks**: 交互式学习环境，即学即练
+- 🎯 **6个完整实战案例**: 企业级代码实现（智能客服、文档问答、AI研究助手等）
 - 📊 **89张技术图表**: 深入理解架构和原理
-- ✅ **30+练习题**: 巩固学习成果
+- ✅ **30+练习题**: 巩固学习成果，附带详细参考答案
+- 🚀 **前沿技术覆盖**: HyDE、Self-RAG、CRAG、GraphRAG、Deep Research、检索压缩等
+- 🛠️ **完整技术栈**: LangChain、LlamaIndex、OpenAI、ChromaDB、Pinecone、Streamlit、FastAPI等
+- 🌏 **中文优化**: 专为中文学习者设计，案例贴合实际应用场景
 
 ---
 
@@ -219,14 +230,56 @@ jupyter lab
 
 ## 🛠️ 技术栈
 
-| 类别 | 技术 |
-|------|------|
-| **框架** | LangChain, LlamaIndex |
-| **LLM** | OpenAI GPT-4, Anthropic Claude |
-| **向量数据库** | ChromaDB, Pinecone, Milvus |
-| **嵌入模型** | OpenAI Embeddings, HuggingFace |
-| **Web框架** | Streamlit, FastAPI |
-| **部署** | Docker, Kubernetes |
+### 核心框架
+- **LangChain**: 强大的LLM应用开发框架，支持链式调用、Agent等
+- **LlamaIndex**: 专注于数据索引和检索的RAG框架
+
+### 大语言模型（LLM）
+- **OpenAI**: GPT-4, GPT-3.5-turbo
+- **Anthropic**: Claude 3.5 Sonnet, Claude 3 Opus
+- **本地模型**: 支持通过Ollama使用Llama 3、Qwen等开源模型
+
+### 向量数据库
+- **ChromaDB**: 轻量级本地向量数据库
+- **Pinecone**: 全托管向量数据库服务
+- **Milvus**: 开源分布式向量数据库
+- **MongoDB Atlas Vector Search**: MongoDB原生向量搜索
+- **Weaviate**: 开源向量搜索引擎
+
+### 嵌入模型
+- **OpenAI Embeddings**: text-embedding-3-small, text-embedding-3-large
+- **HuggingFace**: sentence-transformers系列（all-MiniLM-L6-v2, m3e-base等）
+- **FlagEmbedding**: 中文优化嵌入模型（bge系列）
+
+### RAG优化技术
+- **混合检索**: Vector Search + BM25关键词检索
+- **重排序**: CrossEncoder、Cohere Rerank
+- **查询增强**: HyDE（假设文档嵌入）、Query Rewriting、Query Expansion
+- **高级分块**: Semantic Chunking、Recursive Character Splitting
+- **检索压缩**: Context Compression、LLMContextualCompression
+
+### Agent架构
+- **ReAct Agent**: 推理+行动模式
+- **Self-RAG**: 自我反思RAG
+- **CRAG**: 校正RAG
+- **Agentic RAG**: Agent驱动的动态检索
+- **Deep Research Agent**: 多轮深度推理Agent
+
+### 知识图谱
+- **GraphRAG**: 结合知识图谱的RAG
+- **Neo4j**: 图数据库存储
+- **NetworkX**: 图计算和分析
+
+### Web框架
+- **Streamlit**: 快速构建交互式界面
+- **FastAPI**: 高性能异步API框架
+- **Jupyter**: 交互式Notebook环境
+
+### 部署运维
+- **Docker**: 容器化部署
+- **Kubernetes**: 容器编排
+- **GitHub Actions**: CI/CD自动化
+- **Prometheus + Grafana**: 监控和告警
 
 ---
 
@@ -394,7 +447,13 @@ RAG完整教程/
 ## 📮 联系方式
 
 - **Issue**: [GitHub Issues](https://github.com/vivy-yi/rag-tutorial/issues)
-- **Email**: your.email@example.com
+- **Email**: xiaoluopupu@gmail.com
+
+---
+
+## 🔖 关键词
+
+RAG、检索增强生成、Retrieval-Augmented Generation、LangChain、LlamaIndex、向量数据库、Vector Database、大语言模型、LLM、GPT-4、Claude、ChromaDB、Pinecone、Agent、ReAct、Self-RAG、GraphRAG、HyDE、混合检索、重排序、嵌入模型、Embedding、OpenAI、中文教程、人工智能教程、AI应用开发、知识库问答、智能客服、文档问答
 
 ---
 
