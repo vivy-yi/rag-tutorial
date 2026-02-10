@@ -81,7 +81,7 @@ jobs:
           **💡 提示**: 这些是Jupyter Notebook转换后的Markdown版本。
           想要交互式运行，请克隆仓库到本地：
           ```bash
-          git clone https://github.com/yourusername/rag-tutorial.git
+          git clone https://github.com/vivy-yi/rag-tutorial.git
           cd rag-tutorial
           pip install -r requirements.txt
           jupyter notebook
