@@ -60,64 +60,64 @@ nav:
 
   # 模块1：基础入门
   - 基础入门:
-    - 模块1概述: docs/01-基础入门/00-教程导航.md
-    - RAG技术概述: docs/01-基础入门/01-RAG技术概述.md
-    - 环境搭建与工具准备: docs/01-基础入门/02-环境搭建与工具准备.md
-    - 基础RAG实现: docs/01-基础入门/03-基础RAG实现.md
-    - RAG评估基础: docs/01-基础入门/04-RAG评估基础.md
-    - 模块1总结与项目: docs/01-基础入门/05-模块1总结与项目.md
+    - 模块1概述: 01-基础入门/00-教程导航.md
+    - RAG技术概述: 01-基础入门/01-RAG技术概述.md
+    - 环境搭建与工具准备: 01-基础入门/02-环境搭建与工具准备.md
+    - 基础RAG实现: 01-基础入门/03-基础RAG实现.md
+    - RAG评估基础: 01-基础入门/04-RAG评估基础.md
+    - 模块1总结与项目: 01-基础入门/05-模块1总结与项目.md
 
   # Jupyter Notebooks - 模块1
   - 模块1实战:
-    - RAG核心概念: docs/01-基础入门/notebooks/01_rag_concepts.ipynb
-    - 环境搭建: docs/01-基础入门/notebooks/02_environment_setup.ipynb
-    - 基础RAG实现: docs/01-基础入门/notebooks/03_basic_rag_implementation.ipynb
-    - RAG评估: docs/01-基础入门/notebooks/04_rag_evaluation.ipynb
+    - RAG核心概念: 01-基础入门/notebooks/01_rag_concepts.ipynb
+    - 环境搭建: 01-基础入门/notebooks/02_environment_setup.ipynb
+    - 基础RAG实现: 01-基础入门/notebooks/03_basic_rag_implementation.ipynb
+    - RAG评估: 01-基础入门/notebooks/04_rag_evaluation.ipynb
 
   # 模块2：核心优化
   - 核心优化:
-    - 嵌入模型深入: docs/02-核心优化/06-嵌入模型深入.md
-    - 高级分块策略: docs/02-核心优化/07-高级分块策略.md
-    - 查询增强技术: docs/02-核心优化/08-查询增强技术.md
-    - 混合检索与重排序: docs/02-核心优化/09-混合检索与重排序.md
-    - 高级RAG模式: docs/02-核心优化/10-高级RAG模式.md
-    - 性能优化: docs/02-核心优化/11-性能优化.md
-    - 综合项目优化: docs/02-核心优化/12-综合项目优化.md
-    - 检索压缩优化: docs/02-核心优化/13-检索压缩优化.md
+    - 嵌入模型深入: 02-核心优化/06-嵌入模型深入.md
+    - 高级分块策略: 02-核心优化/07-高级分块策略.md
+    - 查询增强技术: 02-核心优化/08-查询增强技术.md
+    - 混合检索与重排序: 02-核心优化/09-混合检索与重排序.md
+    - 高级RAG模式: 02-核心优化/10-高级RAG模式.md
+    - 性能优化: 02-核心优化/11-性能优化.md
+    - 综合项目优化: 02-核心优化/12-综合项目优化.md
+    - 检索压缩优化: 02-核心优化/13-检索压缩优化.md
 
   # Jupyter Notebooks - 模块2
   - 模块2实战:
-    - 嵌入模型深入: docs/02-核心优化/notebooks/06_embedding_models.ipynb
-    - 高级分块策略: docs/02-核心优化/notebooks/07_advanced_chunking.ipynb
-    - 查询增强技术: docs/02-核心优化/notebooks/08_query_enhancement.ipynb
-    - 混合检索: docs/02-核心优化/notebooks/09_hybrid_retrieval.ipynb
-    - 高级RAG模式: docs/02-核心优化/notebooks/10_advanced_rag_patterns.ipynb
-    - 性能优化: docs/02-核心优化/notebooks/11_performance_optimization.ipynb
-    - 综合优化: docs/02-核心优化/notebooks/12_comprehensive_optimization.ipynb
-    - 检索压缩: docs/02-核心优化/notebooks/13_retrieval_compression.ipynb
+    - 嵌入模型深入: 02-核心优化/notebooks/06_embedding_models.ipynb
+    - 高级分块策略: 02-核心优化/notebooks/07_advanced_chunking.ipynb
+    - 查询增强技术: 02-核心优化/notebooks/08_query_enhancement.ipynb
+    - 混合检索: 02-核心优化/notebooks/09_hybrid_retrieval.ipynb
+    - 高级RAG模式: 02-核心优化/notebooks/10_advanced_rag_patterns.ipynb
+    - 性能优化: 02-核心优化/notebooks/11_performance_optimization.ipynb
+    - 综合优化: 02-核心优化/notebooks/12_comprehensive_optimization.ipynb
+    - 检索压缩: 02-核心优化/notebooks/13_retrieval_compression.ipynb
 
   # 模块3：高级架构
   - 高级架构:
-    - Agentic RAG基础: docs/03-高级架构/13-Agentic-RAG基础.md
-    - 高级Agent模式: docs/03-高级架构/14-高级Agent模式.md
-    - 知识图谱RAG: docs/03-高级架构/15-知识图谱RAG.md
-    - 多模态RAG: docs/03-高级架构/16-多模态RAG.md
+    - Agentic RAG基础: 03-高级架构/13-Agentic-RAG基础.md
+    - 高级Agent模式: 03-高级架构/14-高级Agent模式.md
+    - 知识图谱RAG: 03-高级架构/15-知识图谱RAG.md
+    - 多模态RAG: 03-高级架构/16-多模态RAG.md
 
   # Jupyter Notebooks - 模块3
   - 模块3实战:
-    - ReAct Agent: docs/03-高级架构/notebooks/13_react_agent.ipynb
-    - 高级Agent模式: docs/03-高级架构/notebooks/14_advanced_agents.ipynb
-    - Deep Research: docs/03-高级架构/notebooks/14_deep_research_agent.ipynb
-    - GraphRAG: docs/03-高级架构/notebooks/15_graph_rag.ipynb
-    - 多模态RAG: docs/03-高级架构/notebooks/16_multimodal_rag.ipynb
+    - ReAct Agent: 03-高级架构/notebooks/13_react_agent.ipynb
+    - 高级Agent模式: 03-高级架构/notebooks/14_advanced_agents.ipynb
+    - Deep Research: 03-高级架构/notebooks/14_deep_research_agent.ipynb
+    - GraphRAG: 03-高级架构/notebooks/15_graph_rag.ipynb
+    - 多模态RAG: 03-高级架构/notebooks/16_multimodal_rag.ipynb
 
   # 模块4：生产部署
   - 生产部署:
-    - 环境配置: docs/04-生产部署/17-环境配置.md
-    - Docker部署: docs/04-生产部署/18-Docker部署.md
-    - 监控和日志: docs/04-生产部署/19-监控和日志.md
-    - 安全实践: docs/04-生产部署/20-安全实践.md
-    - 最佳实践: docs/04-生产部署/22-最佳实践.md
+    - 环境配置: 04-生产部署/17-环境配置.md
+    - Docker部署: 04-生产部署/18-Docker部署.md
+    - 监控和日志: 04-生产部署/19-监控和日志.md
+    - 安全实践: 04-生产部署/20-安全实践.md
+    - 最佳实践: 04-生产部署/22-最佳实践.md
 
 # Markdown扩展
 markdown_extensions:
