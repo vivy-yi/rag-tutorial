@@ -73,10 +73,10 @@ nav:
 
   # Jupyter Notebooks - 模块1
   - 模块1实战:
-    - RAG核心概念: notebooks/module1/01_rag_concepts/
-    - 环境搭建: notebooks/module1/02_environment_setup/
-    - 基础RAG实现: notebooks/module1/03_basic_rag_implementation/
-    - RAG评估: notebooks/module1/04_rag_evaluation/
+    - RAG核心概念: notebooks/module1/01_rag_concepts.ipynb
+    - 环境搭建: notebooks/module1/02_environment_setup.ipynb
+    - 基础RAG实现: notebooks/module1/03_basic_rag_implementation.ipynb
+    - RAG评估: notebooks/module1/04_rag_evaluation.ipynb
 
   # 模块2：核心优化
   - 核心优化:
@@ -91,14 +91,14 @@ nav:
 
   # Jupyter Notebooks - 模块2
   - 模块2实战:
-    - 嵌入模型深入: notebooks/module2/06_embedding_models/
-    - 高级分块策略: notebooks/module2/07_advanced_chunking/
-    - 查询增强技术: notebooks/module2/08_query_enhancement/
-    - 混合检索: notebooks/module2/09_hybrid_retrieval/
-    - 高级RAG模式: notebooks/module2/10_advanced_rag_patterns/
-    - 性能优化: notebooks/module2/11_performance_optimization/
-    - 综合优化: notebooks/module2/12_comprehensive_optimization/
-    - 检索压缩: notebooks/module2/13_retrieval_compression/
+    - 嵌入模型深入: notebooks/module2/06_embedding_models.ipynb
+    - 高级分块策略: notebooks/module2/07_advanced_chunking.ipynb
+    - 查询增强技术: notebooks/module2/08_query_enhancement.ipynb
+    - 混合检索: notebooks/module2/09_hybrid_retrieval.ipynb
+    - 高级RAG模式: notebooks/module2/10_advanced_rag_patterns.ipynb
+    - 性能优化: notebooks/module2/11_performance_optimization.ipynb
+    - 综合优化: notebooks/module2/12_comprehensive_optimization.ipynb
+    - 检索压缩: notebooks/module2/13_retrieval_compression.ipynb
 
   # 模块3：高级架构
   - 高级架构:
@@ -109,11 +109,11 @@ nav:
 
   # Jupyter Notebooks - 模块3
   - 模块3实战:
-    - ReAct Agent: notebooks/module3/13_react_agent/
-    - 高级Agent模式: notebooks/module3/14_advanced_agents/
-    - Deep Research: notebooks/module3/14_deep_research_agent/
-    - GraphRAG: notebooks/module3/15_graph_rag/
-    - 多模态RAG: notebooks/module3/16_multimodal_rag/
+    - ReAct Agent: notebooks/module3/13_react_agent.ipynb
+    - 高级Agent模式: notebooks/module3/14_advanced_agents.ipynb
+    - Deep Research: notebooks/module3/14_deep_research_agent.ipynb
+    - GraphRAG: notebooks/module3/15_graph_rag.ipynb
+    - 多模态RAG: notebooks/module3/16_multimodal_rag.ipynb
 
   # 模块4：生产部署
   - 生产部署:

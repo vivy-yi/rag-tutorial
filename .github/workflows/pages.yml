@@ -28,19 +28,8 @@ jobs:
         run: |
           pip install mkdocs-material
           pip install mkdocs-jupyter
-          pip install jupyter
-          pip install nbconvert
           pip install pillow
           pip install cairosvg
-
-      - name: Convert Notebooks to Markdown
-        run: |
-          echo "Converting Jupyter Notebooks to Markdown..."
-          for notebook in $(find notebooks -name "*.ipynb" | sort); do
-            echo "  Converting: $notebook"
-            jupyter nbconvert --to markdown "$notebook"
-          done
-          echo "✓ Notebook conversion complete"
 
       - name: Build MkDocs site
         run: |
