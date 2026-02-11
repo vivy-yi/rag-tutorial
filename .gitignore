@@ -108,3 +108,7 @@ tmp/
 
 # Development files (internal use only)
 开发/
+
+# Tutorial Project Development Skill
+# (技能文件已移至项目外部: ../tutorial-project-development-skill/)
+skills/
