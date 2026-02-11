@@ -8,7 +8,7 @@
 
 **在线文档** | **Jupyter Notebooks** | **实战案例**
 ---|---|---
-[GitHub Pages](https://vivy-yi.github.io/rag-tutorial/) | [查看Notebooks](#-jupyter-notebooks) | [6个完整案例](#-实战案例)
+[GitHub Pages](https://vivy-yi.github.io/rag-tutorial/) | [在线运行](https://vivy-yi.github.io/rag-tutorial/) | [案例文档](https://vivy-yi.github.io/rag-tutorial/projects/)
 
 ---
 
@@ -146,51 +146,38 @@ cd notebooks
 
 ### 案例1：智能客服RAG系统
 
-**路径**: `projects/case1-customer-service/`
-
-**特点**：
-- 基础RAG应用
-- 支持多轮对话
-- Streamlit Web界面
+- **在线文档**: [查看](https://vivy-yi.github.io/rag-tutorial/projects/case1-customer-service/)
+- **源码路径**: `projects/case1-customer-service/`
+- **特点**: 基础RAG应用、多轮对话、Streamlit界面
 
 ### 案例2：技术文档问答系统
 
-**路径**: `projects/case2-doc-qa/`
-
-**特点**：
-- Vector + BM25混合检索
-- CrossEncoder重排序
-- 代码高亮显示
+- **在线文档**: [查看](https://vivy-yi.github.io/rag-tutorial/projects/case2-doc-qa/)
+- **源码路径**: `projects/case2-doc-qa/`
+- **特点**: Vector + BM25混合检索、CrossEncoder重排序
 
 ### 案例3：AI研究助手Agent
 
-**路径**: `projects/case3-research-agent/`
-
-**特点**：
-- ReAct Agent模式
-- ArXiv论文搜索
-- 自动生成报告
+- **在线文档**: [查看](https://vivy-yi.github.io/rag-tutorial/projects/case3-research-agent/)
+- **源码路径**: `projects/case3-research-agent/`
+- **特点**: ReAct Agent模式、ArXiv论文搜索、自动生成报告
 
 ### 案例4：企业知识图谱问答
 
-**路径**: `projects/case4-knowledge-graph/`
-
-**特点**：
-- GraphRAG实现
-- 多跳推理
-- 路径可视化
+- **在线文档**: [查看](https://vivy-yi.github.io/rag-tutorial/projects/case4-knowledge-graph/)
+- **源码路径**: `projects/case4-knowledge-graph/`
+- **特点**: GraphRAG实现、多跳推理、路径可视化
 
 ### 案例5：多模态产品问答
 
-**路径**: `projects/case5-multimodal/`
-
-**特点**：
-- 图文混合检索
-- CLIP/GPT-4V支持
+- **在线文档**: [查看](https://vivy-yi.github.io/rag-tutorial/projects/case5-multimodal/)
+- **源码路径**: `projects/case5-multimodal/`
+- **特点**: 图文混合检索、CLIP/GPT-4V支持
 
 ### 案例6：企业级RAG平台
 
-**路径**: `projects/case6-enterprise-platform/`
+- **在线文档**: [查看](https://vivy-yi.github.io/rag-tutorial/projects/case6-enterprise-platform/)
+- **源码路径**: `projects/case6-enterprise-platform/`
 
 **特点**：
 - FastAPI RESTful API
@@ -278,11 +265,16 @@ pip install -r requirements.txt
 
 ### 学习教程
 
-#### 选项1：在线阅读（推荐）
+#### 选项1：在线浏览（推荐）
 
-访问 [GitHub Pages](https://vivy-yi.github.io/rag-tutorial/)
+访问 [GitHub Pages](https://vivy-yi.github.io/rag-tutorial/) 在线阅读完整教程
 
-#### 选项2：本地阅读
+- ✅ 无需安装
+- ✅ 完美渲染的Markdown和Notebooks
+- ✅ 全文搜索功能
+- ✅ 支持所有设备
+
+#### 选项2：本地阅读文档
 
 ```bash
 # 查看教程文档
@@ -290,11 +282,11 @@ cd docs/01-基础入门
 open 01-RAG技术概述.md
 ```
 
-#### 选项3：Jupyter Notebook
+#### 选项3：本地运行Notebooks
 
 ```bash
 # 启动Jupyter
-jupyter notebook notebooks/
+jupyter notebook
 
 # 浏览到对应模块的notebook目录
 # 例如：notebooks/module1/
@@ -305,6 +297,7 @@ jupyter notebook notebooks/
 ```bash
 # 例如运行案例1
 cd projects/case1-customer-service
+pip install -r requirements.txt
 python main.py
 ```
 
