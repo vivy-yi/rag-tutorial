@@ -52,7 +52,7 @@ plugins:
         - en
       separator: '[\s\-\.]+'
   - mkdocs-jupyter:
-      execute: false$
+      execute: false
 
 # 导航结构
 nav:
