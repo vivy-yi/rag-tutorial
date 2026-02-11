@@ -121,6 +121,16 @@ nav:
     - 安全实践: 04-生产部署/22-安全实践.md
     - 最佳实践: 04-生产部署/23-最佳实践和案例分析.md
 
+  # 实战案例
+  - 实战案例:
+    - 案例概览: projects/index.md
+    - 案例1-智能客服: projects/case1-customer-service.md
+    - 案例2-文档问答: projects/case2-doc-qa.md
+    - 案例3-研究助手: projects/case3-research-agent.md
+    - 案例4-知识图谱: projects/case4-knowledge-graph.md
+    - 案例5-多模态: projects/case5-multimodal.md
+    - 案例6-企业平台: projects/case6-enterprise-platform.md
+
 # Markdown扩展
 markdown_extensions:
   - abbr
